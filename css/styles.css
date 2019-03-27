@@ -22,4 +22,69 @@ h6 {
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    padding: 20px 15px;
+}
+
+.main {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main__item {
+    border-top: 5px solid var(--blackColor);
+    /* border-right: 1px solid var(--greyColor); */
+    padding-top: 10px;
+    display: grid;
+    grid-row-gap: -10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
+    font-weight: 800;
+}
+
+.main__item .item__num {
+    font-size: 30px;
+}
+
+.main__item .item__title {
+    font-size: 15px;
+}
+
+.main__item .item__subtitle {
+    font-size: 10px;
+}
+
+.main__item .item__description {
+    font-size: 10px;
+    color: var(--greyColor);
+}
+
+.main__item:first-child {
+    grid-area: span 3 / span 2;
+    color: var(--redColor);
+    font-size: 90px;
+    font-weight: 900;
+    border-top: 5px solid var(--redColor);
+    padding-top: 10px;
+}
+
+.main__item:nth-child(3) {
+    /* grid-column-start: span 2;
+    grid-column-end: span 5; */
+    grid-area: span 2 / span 1;
+    color: var(--redColor);
+}
+
+.main__item:nth-child(4) {
+    grid-area: span 3 / span 3;
+}
+
+.main__item:nth-child(5) {
+    grid-area: span 2 / span 1;
+}
+
+.main__item:nth-child(9) {
+    grid-area: span 1 / span 2;
 }
