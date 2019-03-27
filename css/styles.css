@@ -1,7 +1,7 @@
 :root {
     --blackColor: rgba(0, 0, 0);
     --greyColor: rgba(0, 0, 0, 0.3);
-    --redColor: rgba(255, 0, 0);
+    --redColor: rgba(255, 22, 18);
 }
 
 * {
